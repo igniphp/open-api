@@ -6,7 +6,7 @@ use Doctrine\Common\Annotations\Annotation\Target;
 
 /**
  * @Annotation
- * @Target(Target::TARGET_ANNOTATION)
+ * @Target("ANNOTATION")
  */
 class Link extends Parameter
 {
@@ -32,4 +32,6 @@ class Link extends Parameter
      * @var string
      */
     public $description;
+
+    public $in = "path";
 }

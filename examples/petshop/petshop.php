@@ -35,7 +35,13 @@ require_once 'config/default.php';
  */
 class Application
 {
+    public function onRun() {
 
+    }
+
+    public function onRequest() {
+
+    }
 }
 
 
@@ -93,12 +99,16 @@ class Pet
  *   @Api\Response(
  *     code="200",
  *     schema=@Api\Reference(Tag::class)
+ *   ),
+ *   @Api\Response(
+ *     code="500",
+ *
  *   )
  * )
  */
 function getTag()
 {
-
+    return new Response(500, $object);
 }
 
 /**

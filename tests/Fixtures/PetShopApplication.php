@@ -48,7 +48,7 @@ class PetShopApplication
      *   ],
      *   @Api\Response(
      *     code="200",
-     *     schema=@Api\Reference(Pet::class),
+     *     schema=@Api\Reference(PetSchema::class),
      *     @Api\Link(
      *       name="tag",
      *       operationId="getTag",
